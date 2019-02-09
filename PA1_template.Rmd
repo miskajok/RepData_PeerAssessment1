@@ -8,7 +8,7 @@ library(dplyr)
 #### 1. Code for reading in the dataset and/or processing the data
 
 
-```{r}
+```{r, results='markup', message=TRUE}
 download.file("https://d396qusza40orc.cloudfront.net/repdata%2Fdata%2Factivity.zip", destfile = "activity.zip")
 unzip("activity.zip")
 dataset <- read.table("activity.csv", header = TRUE, sep = ",")
